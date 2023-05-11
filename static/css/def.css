@@ -119,25 +119,25 @@ main h1 {
 
 /* 404 */
 
-#404 {
+#err {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-#404 header {
+#err header {
     font-size: 30px;
 }
-#404 main {
+#err main {
     font-size: 18px;
 }
-#404 a {
+#err a {
     color: var(--red);
     text-decoration: none;
 }
-#404 a:hover {
+#err a:hover {
     text-decoration: underline;
 }
-#404 a:active {
+#err a:active {
     color: var(--light-pink);
 }
 

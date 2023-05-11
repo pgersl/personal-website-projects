@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html></html>
+    <head>
+        {{partial "head.html" .}}
+        {{partial "def-style" .}}
+    </head>
+    <body id="404">
+        <header>
+            404: Page Not Found
+        </header>
+        <main>
+            <p>This page doesn't exist or you've stumbled across a broken link.</p>
+            <a href="{{.Site.BaseURL}}">Return to homepage</a>
+            <a href="https://pgersl.xyz/">Return to main site</a>
+        </main>
+    </body>
+</html>

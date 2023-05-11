@@ -12,6 +12,8 @@
     --yellow: #F1D302;
     --grey: #dbdbdb;
     --dark-grey: #ababab;
+    --darker-grey: #8a8989;
+    --darker-grey2: #989898;
 }
 
 *{
@@ -115,6 +117,34 @@ main h1 {
     font-size: 18px;
     text-decoration: underline;
     padding-right: 20px;
+}
+
+/* Footer */
+
+footer {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--dark-grey);
+}
+footer a {
+    color: var(--dark-grey);
+    text-decoration: underline;
+}
+footer a:hover {
+    color: var(--darker-grey);
+}
+footer a:active {
+    color: var(--darker-grey2);
+}
+hr {
+    border: none;
+    background-color: var(--dark-grey);
+    height: 2px;
+    margin-bottom: 20px;
+    width: 30vw;
 }
 
 /* 404 */

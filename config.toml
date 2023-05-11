@@ -6,12 +6,6 @@ uglyURLs = "false"
 enableEmoji = "true"
 [params]
     description = "Subdomain for personal and school projects and testing"
-[menu]
-    [[menu.main]]
-        identifier = "ads"
-        name = "ADS"
-        url = "/ads"
-        weight = "1"
 [markup]
     [markup.goldmark]
         [markup.goldmark.renderer]

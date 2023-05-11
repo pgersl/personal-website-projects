@@ -4,4 +4,15 @@
         {{partial "head.html" .}}
         {{partial "def-style.html" .}}
     </head>
+    <body>
+        <div class="grid-box">
+            <header>
+                <h1 class="site-title">{{.Site.Title}}</h1>
+                <p class="site-description">Subdomain for personal and school projects and testing.</p>
+            </header>
+            <main>
+                {{.Content}}
+            </main>
+        </div>
+    </body>
 </html>

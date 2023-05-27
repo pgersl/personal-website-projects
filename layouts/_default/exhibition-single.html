@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{.Site.LanguageCode}}">
+    <head>
+        {{partial "exhibition-head.html" .}}
+        {{partial "exhibition-style.html" .}}
+    </head>
+    <body>
+        {{partial "exhibition-nav.html" .}}
+        <header class="single-header">
+            <div class="content">
+                {{.Title}}
+            </div>
+        </header>
+        <main class="single-main">
+            <div class="content">
+                {{.Content}}
+            </div>
+        </main>
+        {{partial "exhibition-footer.html" .}}
+    </body>
+</html>

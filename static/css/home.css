@@ -80,13 +80,14 @@ main h1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    list-style-type: none;
 }
 .home-link {
     border: solid;
     border-color: var(--black);
     border-width: 4px;
     border-radius: 20px;
-    color: #080708;
+    color: var(--black);
     text-decoration: none;
 }
 .home-link:hover {

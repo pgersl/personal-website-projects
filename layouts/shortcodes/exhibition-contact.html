@@ -1,0 +1,9 @@
+<div class="contact">
+    {{with .Get "name"}}<p class="name"><strong>{{.}}</strong></p>{{end}}
+    <div class="info">
+        {{with .Get "mail"}}<p><a href="mailto://{{.}}">{{.}}</a></p>{{end}}
+        {{with .Get "tel"}}<p><a href="tel://{{.}}">{{.}}</a></p>{{end}}
+        {{with .Get "site"}}<p><a href="https://{{.}}" target="_blank">{{.}}</a></p>{{end}}
+        {{with .Get "adress"}}<p>{{.}}</p>{{end}}
+    </div>
+</div>

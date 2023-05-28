@@ -149,7 +149,7 @@ nav {
     background-color: var(--blue3);
 }
 .nav-img img {
-    width: 200px;
+    width: 300px;
 }
 .nav-links-container {
     display: flex;
@@ -223,6 +223,49 @@ header {
     text-align: left;
     align-items: flex-start;
 }
+h1 {
+    padding-bottom: 1em;
+}
+
+/*ABOUT*/
+
+.about-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 2em;
+}
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+.about-box p {
+    padding-bottom: .6em;
+}
+.about-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-img img {
+    width: 450px;
+    border-radius: 1.5em;
+    padding: 1em;
+}
+
+@media (max-width:1000px) {
+    .l {
+        display: flex;
+        flex-direction: column;
+    }
+    .r {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .about-img img {
+        width: 70vw;
+    }
+}
 
 /*KONTAKT*/
 
@@ -248,8 +291,47 @@ header {
 .home-header {
     color: var(--white);
     background-color: var(--blue1);
-    height: 100vh;
-    padding-top: 2em
+    padding-top: 2em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+.home-header.show {
+    opacity: 1;
+    visibility: visible;
+}
+.home-header-scroll {
+    width: 100vw;
+    background-color: var(--blue1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scroll-img {
+    display: flex;
+    align-items: center;
+    padding: 2em;
+}
+.scroll-img a {
+    text-decoration: none;
+    border-radius: .4em;
+}
+.scroll-img a:hover {
+    background-color: var(--blue2);
+}
+.scroll-img a:active {
+    background-color: var(--blue3);
+}
+.scroll-img img {
+    width: 70vw;
+    max-width: 400px;
+    padding: .4em;
 }
 #line1 {
     text-align: center;
@@ -322,6 +404,11 @@ header {
 @media (max-width:400px) {
     #ad {
         font-size: 2.3em;
+    }
+}
+@media (max-height:580px) {
+    .home-header {
+        display: none;
     }
 }
 .home-main {

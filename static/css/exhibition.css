@@ -103,6 +103,9 @@ footer {
     #foot-box {
         flex-direction: column;
     }
+    #partners {
+        justify-content: center;
+    }
 }
 @media (max-width:400px) {
     #partners img {
@@ -190,7 +193,7 @@ nav {
 .nav-link:active {
     color: var(--grey3);
 }
-@media (max-width:805px) {
+@media (max-width:800px) {
     nav {
         flex-direction: column;
     }

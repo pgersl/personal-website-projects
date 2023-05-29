@@ -3,7 +3,7 @@ title: O výstavě
 layout: exhibition-single
 ---
 
-{{< div-start class="about-box" >}}
+{{< div-start class="about-box c" >}}
 
 {{< div-start class="about-text" >}}
 

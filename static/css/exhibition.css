@@ -340,6 +340,60 @@ h1 {
     color:var(--blue3)
 }
 
+/*PROGRAM*/
+
+.content:has(> .program-box) {
+    align-items: center;
+}
+.program-box {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 85vw;
+    max-width: 800px;
+    column-gap: 3em;
+    padding: 1em;
+    text-decoration: none;
+    color: var(--black);
+    border-radius: 1em;
+    box-shadow: 0 0 10px var(--grey3);
+    transition: all .4s;
+}
+.program-box:hover {
+    box-shadow: 0 0 14px var(--grey1);
+}
+.program-box:active {
+    background-color: var(--grey3);
+}
+.program-img {
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.program-img img {
+    max-width: 300px;
+    border-radius: .4em;
+}
+.program-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+}
+.program-text p {
+    padding-bottom: .5em;
+}
+@media (max-width:750px) {
+    .program-box {
+        display: flex;
+        flex-direction: column;
+    }
+    .program-img {
+        display: none;
+    }
+}
+
 /*HOME*/
 
 .home-header {

@@ -89,6 +89,7 @@ main h1 {
     border-radius: 20px;
     color: var(--black);
     text-decoration: none;
+    margin-bottom: 1em;
 }
 .home-link:hover {
     background-color: var(--grey);

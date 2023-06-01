@@ -76,29 +76,15 @@ Budova Mahenova divadla pochází z let 1881 až 1882. Návrh byl zpracován ví
 
 {{< div-start class="single-img" >}}
 
-[![](/imgs/exhibition/cnb.jpg)](/imgs/exhibition/cnb.jpg)
+[![](/imgs/exhibition/roosveltova.jpg)](/imgs/exhibition/roosveltova.jpg)
 
 {{< div-end >}}
 
 {{< div-start class="single-text" >}}
 
-# Budova ČNB
+# [Ulice Rooseveltova](/exhibition/budovy/roosveltova)
 
-{{< div-end >}}
-
-{{< div-end >}}
-
-{{< div-start class="single-box r" >}}
-
-{{< div-start class="single-img" >}}
-
-[![](/imgs/exhibition/janacek.jpg)](/imgs/exhibition/janacek.jpg)
-
-{{< div-end >}}
-
-{{< div-start class="single-text" >}}
-
-# Janáčkovo divadlo
+Podívejte se na zajímavé budovy na ulici Roosveltova!
 
 {{< div-end >}}
 
@@ -114,7 +100,9 @@ Budova Mahenova divadla pochází z let 1881 až 1882. Návrh byl zpracován ví
 
 {{< div-start class="single-text" >}}
 
-# Berglův palác
+# [Berglův palác](/exhibition/budovy/bergl)
+
+Berglův palác je dnes multifunkční budovou na rohu Moravského náměstí, kde sídlí nejen restaurace a kavárna známá jako *Muzejka*, ale také Francouzská aliance a Rakouský institut. Pochází z 80. let 19. století a jejím architektem byl Heinrich Ferstel.
 
 {{< div-end >}}
 
@@ -130,7 +118,9 @@ Budova Mahenova divadla pochází z let 1881 až 1882. Návrh byl zpracován ví
 
 {{< div-start class="single-text" >}}
 
-# Krajský úřad JMK
+# [Krajský úřad JMK](/exhibition/budovy/jmk)
+
+Nový zemský dům je současným sídlem krajského úřadu JMK, který zde sídlí od roku 2000, a od roku 2008 navíc ještě sídlem Archivu Masarykovi univerzity. Stavba domu proběhla v letech 1905 až 1907 podle návrhu architekta Ferdinanda Hracha.
 
 {{< div-end >}}
 
@@ -146,7 +136,9 @@ Budova Mahenova divadla pochází z let 1881 až 1882. Návrh byl zpracován ví
 
 {{< div-start class="single-text" >}}
 
-# Ústavní soud
+# [Ústavní soud](/exhibition/budovy/soud)
+
+Zemský dům, dnes sídlo Ústavního soudu ČR, byl postaven v letech 1872 až 1873. Je jednou dominant ulice Joštova.
 
 {{< div-end >}}
 
@@ -188,22 +180,6 @@ Budova Mahenova divadla pochází z let 1881 až 1882. Návrh byl zpracován ví
 
 {{< div-start class="single-img" >}}
 
-[![](/imgs/exhibition/prazak.jpg)](/imgs/exhibition/prazak.jpg)
-
-{{< div-end >}}
-
-{{< div-start class="single-text" >}}
-
-# Pražákův palác
-
-{{< div-end >}}
-
-{{< div-end >}}
-
-{{< div-start class="single-box r" >}}
-
-{{< div-start class="single-img" >}}
-
 [![](/imgs/exhibition/husova.jpg)](/imgs/exhibition/husova.jpg)
 
 {{< div-end >}}
@@ -215,7 +191,6 @@ Budova Mahenova divadla pochází z let 1881 až 1882. Návrh byl zpracován ví
 {{< div-end >}}
 
 {{< div-end >}}
-
 
 {{< div-start class="single-box r" >}}
 

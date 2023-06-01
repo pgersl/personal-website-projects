@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {{partial "bs-head.html" .}}
+    </head>
+    <body>
+        <header id="list-header">
+
+        </header>
+        <main id="list-main">
+            {{.Content}}
+            
+            <div class="list-list">
+                {{ range .Pages }}
+                    <a class="list-item" href="{{ .RelPermalink }}">
+                        <div class="list-cover">
+                            <img src="{{ .Params.image }}">
+                        </div>
+                        <div class="list-info">
+                            <p><strong>{{ .Title }}</strong></p>
+                            <p>{{ .Params.author }}</p>
+                            <p>{{ .Params.publ }}</p>
+                        </div>
+                    </a>
+                {{ end }}
+            </div>
+            
+        </main>
+        <footer>
+            
+        </footer>
+    </body>
+</html>

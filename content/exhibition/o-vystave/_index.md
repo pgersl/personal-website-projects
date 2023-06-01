@@ -93,7 +93,7 @@ Na nových budovách pracovali architekti, kteří pracovali přímo na víděň
 
 {{< div-start class="single-img" >}}
 
-[![](/imgs/exhibition/jmk-old.jpg)](/imgs/exhibition/jmk-old.jpg)
+[![](/imgs/exhibition/jmk-old1.jpg)](/imgs/exhibition/jmk-old1.jpg)
 
 {{< div-end >}}
 

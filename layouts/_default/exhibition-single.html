@@ -8,7 +8,9 @@
         {{partial "exhibition-nav.html" .}}
         <header class="single-header">
             <div class="content">
-                {{.Title}}
+                <a href="{{.Parent.RelPermalink}}">
+                    <div class="hover-header"><span class="header-text">{{.Title}}</span><span class="hover-text">{{.Parent.Title}}</span></div>
+                </a>
             </div>
         </header>
         <main class="single-main">

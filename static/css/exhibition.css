@@ -243,6 +243,33 @@ header {
     font-size: 3em;
     font-weight: 700;
 }
+header a {
+    color: var(--white);
+    text-decoration: none;
+}
+.hover-header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-text {
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+}
+.hover-text {
+    opacity: 0;
+    text-decoration: underline;
+    position: absolute;
+    z-index: 2;
+}
+.hover-header:hover .header-text {
+    opacity: 0;
+}
+.hover-header:hover .hover-text {
+    opacity: 1;
+}
 .single-main {
     padding: 2em 0;
     font-size: 17px;
@@ -352,6 +379,7 @@ h1 {
     max-width: 800px;
     column-gap: 3em;
     padding: 1em;
+    margin-bottom: 3em;
     text-decoration: none;
     color: var(--black);
     border-radius: 1em;

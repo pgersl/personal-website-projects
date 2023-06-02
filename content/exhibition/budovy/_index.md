@@ -84,7 +84,7 @@ Budova Mahenova divadla pochází z let 1881 až 1882. Návrh byl zpracován ví
 
 # [Ulice Rooseveltova](/exhibition/budovy/roosveltova)
 
-Podívejte se na zajímavé budovy na ulici Roosveltova!
+Podívejte se na další zajímavé budovy na ulici Roosveltova!
 
 {{< div-end >}}
 
@@ -154,7 +154,11 @@ Zemský dům, dnes sídlo Ústavního soudu ČR, byl postaven v letech 1872 až 
 
 {{< div-start class="single-text" >}}
 
-# Červený kostel
+# [Červený kostel](/exhibition/budovy/kostel)
+
+Červený kostel je českobratrský evangelický chrám zasvěcený Janu Amosi Komenskému. Nachází se na začátku nejzachovalejšího a dost možná toho nejkrásnějšího bulváru Ringstrasse, Husova.
+
+Byl postaven v letech 1863 až 1867 z charakteristicky červených režných cihel cihel. Jeho interiér je podle protestanské tradice strohý a jednoduchý. Dnes kromě evangelických bohoslužeb slouží kostel také ke komorním koncertům a jiným uměleckým aktivitám.
 
 {{< div-end >}}
 
@@ -170,7 +174,11 @@ Zemský dům, dnes sídlo Ústavního soudu ČR, byl postaven v letech 1872 až 
 
 {{< div-start class="single-text" >}}
 
-# Besední dům
+# [Besední dům](/exhibition/budovy/besedni-dum)
+
+Besední dům byl postaven v letech 1870 až 1873. Je jednou z dominant Husovy ulice a byl postaven přímo jako součást Ringstrasse.
+
+Od své stavby sloužil jako kulturní a společenské místo pro Čechy v Brně, což ostatně činí dodnes, neboť dnes patří brněnským filharmonikům. 
 
 {{< div-end >}}
 
@@ -186,7 +194,9 @@ Zemský dům, dnes sídlo Ústavního soudu ČR, byl postaven v letech 1872 až 
 
 {{< div-start class="single-text" >}}
 
-# Ulice Husova
+# [Ulice Husova](/exhibition/budovy/husova)
+
+Podívejte se na další zajímavé budovy na ulici Roosveltova!
 
 {{< div-end >}}
 
@@ -202,7 +212,9 @@ Zemský dům, dnes sídlo Ústavního soudu ČR, byl postaven v letech 1872 až 
 
 {{< div-start class="single-text" >}}
 
-# Petrov
+# [Petrov](/exhibition/budovy/petrov)
+
+Poslední zbytky brněnských hradeb jsou vidět právě z katedrály sv. Petra a Pavla. Právě zde je vidět co bylo, ja a mohlo být.
 
 {{< div-end >}}
 

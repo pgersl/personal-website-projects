@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    {{partial "ads-head.html" .}}
+    <body>
+        <div class="content">
+        {{partial "ads-nav.html" .}}
+        <header id="home-header">
+            Autonomní debatní spolek
+        </header>
+        <main>
+            {{.Content}}
+            <h1>Aktuality</h1>
+            <div id="news">
+
+                {{$newsPages := where .Site.Pages ".Params.news" "==" true}}
+                {{$sortedPages := slice}}
+                {{range sort $newsPages ".Date"}}
+                    {{if lt (len $sortedPages) 6}}
+                        {{$sortedPages = $sortedPages | append .}}
+                    {{end}}
+                {{end}}
+                {{range $sortedPages}}
+                
+                    <a class="news-container" href="{{.RelPermalink}}">
+                        <h3>{{.Title}}</h3>
+                        <p>{{.Params.show}}</p>
+                        <p><em>{{.Date | time.Format "2. 1. 2006"}}</em></p>
+                    </a>
+                {{end}}
+            </div>
+        </main>
+        {{partial "ads-footer.html" .}}
+        </div>
+    </body>
+</html>

@@ -10,4 +10,6 @@ layout: home
 
 {{< home-link link="/bs/" title="Bookshelf" description="Skupinový projekt do informatiky (2022/2023)" >}}
 
+{{< home-link link="/ads/" title="Autonomní debatní spolek" description="Skupinový projekt do informatiky (2022/2023)" >}}
+
 </ul>

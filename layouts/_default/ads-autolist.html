@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    {{partial "ads-head.html" .}}
+    <body>
+        <div class="content">
+            {{partial "ads-nav.html" .}}
+            <header>
+                {{.Title}}
+            </header>
+            <main>
+                <div id="news">
+                    {{range .Pages}}
+                        <a class="news-container" href="{{.RelPermalink}}">
+                            <h3>{{.Title}}</h3>
+                            <p>{{.Params.show}}</p>
+                            <p><em>{{.Params.publ}}</em></p>
+                        </a>
+                    {{end}}
+                </div>
+            </main>
+            {{partial "ads-footer.html" .}}
+        </div>
+    </body>
+</html>

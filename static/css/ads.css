@@ -3,18 +3,14 @@
     src: url('lm-regular.otf');
     font-weight: normal;
     font-style: normal;
-
+}
+@font-face {
+    font-family: 'Palatino';
+    src: url(pala.ttf);
+    font-weight: normal;
+    font-style: normal;
 }
 
-:root {
-    --bg-clr1: #000000;
-    --text-clr: #FFFFFF;
-    --text-clr2: #5c5c5c;
-    --link-clr: #ffa600;
-    --link-clr-light: #ffc400;
-    --link-bg-clr: #ffa60042;
-    --link-bg-clr-light: #ffa60013;
-}
 
 * {
     padding: 0;
@@ -25,7 +21,7 @@ html {
     color: var(--text-clr);
 }
 body {
-    font-family: 'LatinModern';
+    font-family: 'Palatino';
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1.2em;
@@ -45,7 +41,6 @@ a:active {
     color: var(--link-clr-light);
 }
 
-
 /* NAV */
 
 nav {
@@ -54,18 +49,51 @@ nav {
 .nav-content {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+}
+.links-utils {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 .nav-logo img {
     width: 70px;
 }
 .nav-link {
     padding-left: .6em;
+    font-weight: 600;
 }
 .nav-links {
     display: flex;
     flex-direction: row;
+}
+.nav-utils {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+}
+#theme-toggle {
+    color: var(--bg-clr1);
+    background-color: var(--link-clr);
+    font-size: 15px;
+    padding: 4px 5px;
+    border: solid;
+    border-width: 3px;
+    border-color: var(--text-clr);
+    margin-left: .6em;
+}
+#theme-toggle:hover {
+    background-color: var(--link-clr-light);
+    cursor: pointer;
+}
+#theme-toggle:active {
+    background-color: var(--link-bg-clr);
+}
+.nav-link[href *= "about"] {
+    display: block;
+    width: 7ch;
 }
 
 /* FOOTER */
@@ -75,6 +103,7 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     margin-top: 10em;
     margin-bottom: 1em;
     color: var(--text-clr2);
@@ -136,7 +165,7 @@ h3 {
     text-decoration: none;
     padding: .7em;
     border: solid var(--text-clr);
-    margin-top: 1em;
+    margin: 1em;
 }
 .news-container:hover {
     background-color: var(--link-bg-clr);
@@ -144,6 +173,7 @@ h3 {
 }
 .news-container:active {
     background-color: var(--link-bg-clr-light);
+    color: var(--text-clr);
 }
 .news-container h3 {
     color: var(--link-clr);

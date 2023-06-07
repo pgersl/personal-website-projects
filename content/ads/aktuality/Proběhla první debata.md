@@ -1,9 +1,9 @@
 ---
-title: Nové stránky
+title: Proběhla první debata
 layout: ads-single
-date: 2023-06-05
-author: Petr Geršl
-show: Začínající debatní spolek má své vlastní stránky. Vítejte na nich. Podívejte se na jejich technické pozadí a zjistětě něco také o jejich designové filosofii.
+date: 2023-06-07
+author: Vít Černý
+show: Debatní spolek uspořádal historický první debatu. Podívejte se na její průběh a seznamte se s myšlenkami prvních členů.
 news: true
 ---
 
@@ -20,4 +20,3 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quem Tiberina descensio
 # Lorem ipsum
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quem Tiberina descensio festo illo die tanto gaudio affecit, quanto L. Duo Reges: constructio interrete. Utrum igitur tibi litteram videor an totas paginas commovere? Hic nihil fuit, quod quaereremus. Explanetur igitur. Quae cum essent dicta, discessimus. Ab his oratores, ab his imperatores ac rerum publicarum principes extiterunt.
-

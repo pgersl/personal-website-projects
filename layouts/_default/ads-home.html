@@ -9,9 +9,21 @@
         </header>
         <main>
             {{.Content}}
+            <h1>Nejnovější debata</h1>
+            <div id="list">
+                {{$debates := where .Site.Pages ".Params.debate" "==" true}}
+                {{$newest := $debates.ByDate.Reverse | first 1}}
+                {{with $newest}}
+                    {{range first 1 .}}
+                        <a class="list-item-container" href="{{.RelPermalink}}">
+                            <h2>{{.Title}}</h2>
+                            <p>{{.Date | time.Format "2. 1. 2006"}} | {{.Params.time}} | {{.Params.place}}</p>
+                        </a>
+                    {{end}}
+                {{end}}
+            </div>
             <h1>Aktuality</h1>
-            <div id="news">
-
+            <div id="list">
                 {{$newsPages := where .Site.Pages ".Params.news" "==" true}}
                 {{$sortedPages := slice}}
                 {{range sort $newsPages ".Date"}}
@@ -20,8 +32,7 @@
                     {{end}}
                 {{end}}
                 {{range $sortedPages}}
-                
-                    <a class="news-container" href="{{.RelPermalink}}">
+                    <a class="list-item-container" href="{{.RelPermalink}}">
                         <h3>{{.Title}}</h3>
                         <p>{{.Params.show}}</p>
                         <p><em>{{.Date | time.Format "2. 1. 2006"}}</em></p>

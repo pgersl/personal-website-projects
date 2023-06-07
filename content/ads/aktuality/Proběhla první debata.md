@@ -5,6 +5,7 @@ date: 2023-06-07
 author: Vít Černý
 show: Debatní spolek uspořádal historický první debatu. Podívejte se na její průběh a seznamte se s myšlenkami prvních členů.
 news: true
+info: true
 ---
 
 # Lorem ipsum

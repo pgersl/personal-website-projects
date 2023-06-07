@@ -8,14 +8,8 @@
                 {{.Title}}
             </header>
             <main>
-                <div id="news">
-                    {{range .Pages}}
-                        <a class="news-container" href="{{.RelPermalink}}">
-                            <h3>{{.Title}}</h3>
-                            <p>{{.Params.show}}</p>
-                            <p><em>{{.Date | time.Format "2. 1. 2006"}}</em></p>
-                        </a>
-                    {{end}}
+                <div id="list">
+                    {{partial "ads-listing.html" .}}
                 </div>
             </main>
             {{partial "ads-footer.html" .}}

@@ -5,6 +5,7 @@ date: 2023-06-05
 author: Petr Geršl
 show: Začínající debatní spolek má své vlastní stránky. Vítejte na nich. Podívejte se na jejich technické pozadí a zjistětě něco také o jejich designové filosofii.
 news: true
+info: true
 ---
 
 # Lorem ipsum

@@ -1,0 +1,34 @@
+{{if .Params.newsListing}}
+    {{range .Pages}}
+    <a class="list-item-container" href="{{.RelPermalink}}">
+        <h3>{{.Title}}</h3>
+        <p>{{.Params.show}}</p>
+        <p><em>{{.Date | time.Format "2. 1. 2006"}}</em></p>
+    </a>
+    {{end}}
+{{end}}
+
+{{if .Params.debatesListing}}
+    <table class="debates-table">
+        <thead>
+            <tr>
+                <th>Datum</th>
+                <th>Čas</th>
+                <th>Místo</th>
+                <th>Debata</th>
+                <th>Hosté</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{range .Pages}}
+                <tr>
+                    <td>{{.Date | time.Format "2. 1. 2006"}}</td>
+                    <td>{{.Params.time}}</td>
+                    <td>{{.Params.place}}</td>
+                    <td><strong><a class="debates-link" href="{{.RelPermalink}}">{{.Title}}</a></strong></td>
+                    <td>{{.Params.guests}}</td>
+                </tr>
+            {{end}}
+        </tbody>
+    </table>
+{{end}}

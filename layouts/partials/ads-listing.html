@@ -1,10 +1,12 @@
 {{if .Params.newsListing}}
     {{range .Pages}}
-    <a class="list-item-container" href="{{.RelPermalink}}">
-        <h3>{{.Title}}</h3>
-        <p>{{.Params.show}}</p>
-        <p><em>{{.Date | time.Format "2. 1. 2006"}}</em></p>
-    </a>
+        <a class="list-item-container" href="{{.RelPermalink}}">
+            <div class="list-item-container-content">
+                <h3>{{.Title}}</h3>
+                <p class="show-par">{{.Params.show}}</p>
+                <p><em>{{.Date | time.Format "2. 1. 2006"}}</em></p>
+            </div>
+        </a>
     {{end}}
 {{end}}
 

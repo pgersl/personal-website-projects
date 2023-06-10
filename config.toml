@@ -4,6 +4,7 @@ languageCode = "en-us"
 defaultContentLanguage = "en"
 uglyURLs = "false"
 enableEmoji = "true"
+buildFuture = true
 [params]
     description = "Subdomain for personal and school projects and testing"
 [markup]

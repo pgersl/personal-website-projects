@@ -11,31 +11,36 @@
             {{.Content}}
             <h1>Nejnovější debata</h1>
             <div id="list">
+                {{$now := now}}
                 {{$debates := where .Site.Pages ".Params.debate" "==" true}}
-                {{$newest := $debates.ByDate.Reverse | first 1}}
-                {{with $newest}}
+                {{$upcoming := slice}}
+                {{ range $debates }}
+                    {{ if ge .Date $now }}
+                        {{$upcoming = $upcoming | append .}}
+                    {{ end }}
+                {{ end }}
+                {{$closest := $upcoming.ByDate | first 1}}
+                {{with $closest}}
                     {{range first 1 .}}
-                        <a class="list-item-container" href="{{.RelPermalink}}">
-                            <h2>{{.Title}}</h2>
-                            <p>{{.Date | time.Format "2. 1. 2006"}} | {{.Params.time}} | {{.Params.place}}</p>
-                        </a>
+                        <a class="list-item-container debate-list-item-container" href="{{.RelPermalink}}">
+                            <div class="list-item-container-content">
+                                <h2>{{.Title}}</h2>
+                                <p>{{.Date | time.Format "2. 1. 2006"}} | {{.Params.time}} | {{.Params.place}}</p>
+                            </div>
+                        </a>    
                     {{end}}
                 {{end}}
             </div>
+            
             <h1>Aktuality</h1>
             <div id="list">
-                {{$newsPages := where .Site.Pages ".Params.news" "==" true}}
-                {{$sortedPages := slice}}
-                {{range sort $newsPages ".Date"}}
-                    {{if lt (len $sortedPages) 6}}
-                        {{$sortedPages = $sortedPages | append .}}
-                    {{end}}
-                {{end}}
-                {{range $sortedPages}}
+                {{range where .Site.Pages ".Params.news" "==" true | first 3}}
                     <a class="list-item-container" href="{{.RelPermalink}}">
-                        <h3>{{.Title}}</h3>
-                        <p>{{.Params.show}}</p>
-                        <p><em>{{.Date | time.Format "2. 1. 2006"}}</em></p>
+                        <div class="list-item-container-content">
+                            <h3>{{.Title}}</h3>
+                            <p class="show-par">{{.Params.show}}</p>
+                            <p><em>{{.Date | time.Format "2. 1. 2006"}}</em></p>
+                        </div>
                     </a>
                 {{end}}
             </div>

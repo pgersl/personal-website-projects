@@ -32,6 +32,7 @@
 }
 .project-card img {
     width: 100%;
+    height: auto;
     border-radius: .4em;
     margin-bottom: 1em;
 }

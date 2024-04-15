@@ -1,12 +1,13 @@
-baseURL = 'https://projects.pgersl.xyz/'
-title = '/Projects'
-languageCode = "en-us"
-defaultContentLanguage = "en"
-uglyURLs = "false"
-enableEmoji = "true"
-buildFuture = true
-[params]
-    description = "Subdomain for personal and school projects and testing"
+baseURL = "https://pgersl.xyz/"
+title = "Petr Geršl - Projects"
+uglyURLs = false
+enableEmoji = true
+
+[frontmatter]
+    date = ['date', 'publishDate', 'lastmod']
+    expiryDate = ['expiryDate']
+    lastmod = [':git', 'lastmod', 'date', 'publishDate']
+    publishDate = ['publishDate', 'date']
 [markup]
     [markup.goldmark]
         [markup.goldmark.renderer]
@@ -15,3 +16,106 @@ buildFuture = true
         ordered = true
         startLevel = 0
         endLevel = 3
+[outputs]
+    home = ['HTML', 'JSON', 'RSS']
+    page = ['HTML']
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+[languages]
+    [languages.en]
+        contentDir = "content/en"
+        disabled = false
+        languageCode = "en-US"
+        languageDirection = "ltr"
+        languageName = "English"
+        title = "Petr Geršl - Wiki"
+        weight = 1
+        flag = "/media/img/base/en.png"
+        [languages.en.params]
+            description = "Petr Geršl - Wiki"
+        [languages.en.menu]
+            [[languages.en.menu.sites]]
+                identifier = "main"
+                name = "Main"
+                url = "https://pgersl.xyz"
+                weight = 1
+            [[languages.en.menu.sites]]
+                identifier = "wiki"
+                name = "Wiki"
+                url = "https://wiki.pgersl.xyz"
+                weight = 1.5
+            [[languages.en.menu.sites]]
+                identifier = "notes"
+                name = "Notes"
+                url = "https://notes.pgersl.xyz"
+                weight = 2
+            [[languages.en.menu.sites]]
+                identifier = "music"
+                name = "Music"
+                url = "https://music.pgersl.xyz"
+                weight = 3
+    [languages.cs]
+        contentDir = "content/cs"
+        disabled = false
+        languageCode = "cs-CZ"
+        languageDirection = "ltr"
+        languageName = "Čeština"
+        title = "Petr Geršl - Projekty"
+        weight = 2
+        flag = "/media/img/base/cs.png"
+        [languages.cs.params]
+            description = "Petr Geršl - Projekty"
+        [languages.cs.menu]
+            [[languages.cs.menu.sites]]
+                identifier = "main"
+                name = "Hlavní"
+                url = "https://pgersl.xyz"
+                weight = 1
+            [[languages.cs.menu.sites]]
+                identifier = "wiki"
+                name = "Wiki"
+                url = "https://wiki.pgersl.xyz"
+                weight = 1.5
+            [[languages.cs.menu.sites]]
+                identifier = "notes"
+                name = "Poznámky"
+                url = "https://notes.pgersl.xyz"
+                weight = 2
+            [[languages.cs.menu.sites]]
+                identifier = "music"
+                name = "Hudba"
+                url = "https://music.pgersl.xyz"
+                weight = 3
+    [languages.fr]
+        contentDir = "content/fr"
+        disabled = false
+        languageCode = "fr-FR"
+        languageDirection = "ltr"
+        languageName = "Français"
+        title = "Petr Geršl - Projets"
+        weight = 3
+        flag = "/media/img/base/fr.png"
+        [languages.fr.params]
+            description = "Petr Geršl - Projets"
+        [languages.fr.menu]
+            [[languages.fr.menu.sites]]
+                identifier = "main"
+                name = "Principal"
+                url = "https://pgersl.xyz"
+                weight = 1
+            [[languages.fr.menu.sites]]
+                identifier = "wiki"
+                name = "Wiki"
+                url = "https://wiki.pgersl.xyz"
+                weight = 1.5
+            [[languages.fr.menu.sites]]
+                identifier = "notes"
+                name = "Notes"
+                url = "https://notes.pgersl.xyz"
+                weight = 2
+            [[languages.fr.menu.sites]]
+                identifier = "music"
+                name = "Musique"
+                url = "https://music.pgersl.xyz"
+                weight = 3

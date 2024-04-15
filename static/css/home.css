@@ -1,195 +1,73 @@
-/* General */
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
-
-:root {
-    --black: #080708;
-    --white: #F7F8F7;
-    --red: #DA3838;
-    --light-pink: #F2B1B1;
-    --blue: #25C7C7;
-    --light-blue: #D3F4F4;
-    --yellow: #F1D302;
-    --grey: #dbdbdb;
-    --dark-grey: #ababab;
-    --darker-grey: #8a8989;
-    --darker-grey2: #989898;
+#home-now .section-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 3em;
 }
-
-*{
-    padding: 0;
-    margin: 0;
+#home-now img {
+    width: 200px;
+    border-radius: 1em;
+    border: solid 2px var(--accent2);
 }
-
-/* html */
-
-html {
-    font-family: 'DM+Sans', sans-serif;
-    color: var(--black);
-    background-color: var(--white);
+.project-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3em;
+    align-items: stretch;
 }
-::selection {
-    color: var(--white);
-    background: var(--red);
-}
-::-webkit-scrollbar {
-    width: 14px
-}
-::-webkit-scrollbar-track {
-    background: var(--black);
-}
-::-webkit-scrollbar-thumb {
-    background: var(--dark-grey);
-    border-radius: 7px;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: var(--grey);
-}
-
-/* Body */
-
-body {
-    width: 90vw;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px;
-    
-}
-
-.grid-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-/* Home-links */
-
-main h1 {
-    font-size: 40px;
-    padding-bottom: 20px;
-    text-decoration: underline;
-}
-
-.home-links {
-    list-style-type: none;
+.project-card {
+    width: 90%;
+    max-width: 230px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
+    background-color: var(--light2);
+    color: var(--dark1);
+    padding: 1.5em;
+    border-radius: .4em;
+    box-shadow: 0 0 5px 5px #00000018;
 }
-.home-links li {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    list-style-type: none;
-}
-.home-link {
-    border: solid;
-    border-color: var(--black);
-    border-width: 4px;
-    border-radius: 20px;
-    color: var(--black);
-    text-decoration: none;
+.project-card img {
+    width: 100%;
+    border-radius: .4em;
     margin-bottom: 1em;
 }
-.home-link:hover {
-    background-color: var(--grey);
+.project-card a {
+    font-size: var(--h4-size);
+    margin-bottom: .3em;
 }
-.home-link:active {
-    background-color: var(--dark-grey);
-}
-.home-link-title {
-    font-size: 30px;
-    padding: 10px 10px 0px 10px;
-}
-.home-link-description {
-    width: fit-content;
-    padding: 5px 10px 10px 10px;
-    font-size: 18px;
+.project-card p {
+    margin-bottom: 0;
+    color: var(--light4);
+    font-style: italic;
 }
 
-/* Header */
 
-.site-title {
-    font-size: 90px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-}
-
-.site-description {
-    font-size: 18px;
-    text-decoration: underline;
-    padding-right: 20px;
-}
-
-/* Footer */
-
-footer {
-    padding-top: 40px;
+.social-links {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    text-align: center;
-    color: var(--dark-grey);
+    justify-content: space-evenly;
+    gap: 2em;
 }
-footer a {
-    color: var(--dark-grey);
-    text-decoration: underline;
+.social-link {
+    color: var(--accent1);
+    font-size: 60px;
+    transition: var(--transition);
 }
-footer a:hover {
-    color: var(--darker-grey);
+.social-link:hover {
+    color: var(--accent2);
 }
-footer a:active {
-    color: var(--darker-grey2);
-}
-hr {
-    border: none;
-    background-color: var(--dark-grey);
-    height: 2px;
-    margin-bottom: 20px;
-    width: 30vw;
+.social-link:active {
+    color: var(--accent3);
 }
 
-/* 404 */
-
-#err {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-#err header {
-    font-size: 30px;
-}
-#err main {
-    font-size: 18px;
-}
-#err a {
-    color: var(--red);
-    text-decoration: none;
-}
-#err a:hover {
-    text-decoration: underline;
-}
-#err a:active {
-    color: var(--light-pink);
-}
-
-/* Querries */
-
-@media (max-width:760px) {
-    .grid-box {
-        display: flex;
+@media (max-width:450px) {
+    #home-now .section-content {
         flex-direction: column;
-    }
-    main h1 {
-        padding-top: 40px;
-    }
-    body {
-        text-align: center;
-    }
-    .home-links {
-        align-items: center;
-    }
-    .site-title {
-        font-size: 70px;
     }
 }

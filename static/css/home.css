@@ -15,7 +15,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 3em;
-    align-items: stretch;
 }
 .project-card {
     width: 90%;

@@ -38,6 +38,11 @@
 .project-card a {
     font-size: var(--h4-size);
     margin-bottom: .3em;
+    text-decoration: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
 }
 .project-card p {
     margin-bottom: 0;
